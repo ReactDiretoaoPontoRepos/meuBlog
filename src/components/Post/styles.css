@@ -1,0 +1,12 @@
+article {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+small {
+  display: block;
+  margin: 10px 0 15px;
+}

@@ -1,9 +1,19 @@
+import "./styles.css";
+
 const Post = (props) => {
   return (
-    <article>
-      <h2>{props.title}</h2>
-      <p>Conteúdo do post...</p>
-    </article>
+    <div>
+      <article>
+        <h2>{props.title}</h2>
+
+        <small>
+          Leia em {props.readingTime}{" "}
+          {props.readingTime === "1" ? "minuto" : "minutos"}{" "}
+        </small>
+
+        {props.children}
+      </article>
+    </div>
   );
 };
 
